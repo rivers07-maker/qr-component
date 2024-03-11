@@ -1,0 +1,152 @@
+@font-face {
+  font-family: outfit;
+  src: url(./fonts/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+  --color-light-grey: #D5E1EF;
+  --color-white: #FFFFFF;
+  --color-dark-navy: #1F314F;
+  --color-grey: #7D889E;
+}
+
+/* -----CSS RESET----- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.3;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* -----CSS RESET----- */
+
+body {
+  font-family: outfit;
+  background-color: var(--color-light-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-card {
+  max-width: 20rem;
+  background-color: var(--color-white);
+  padding: 16px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 24px 24px rgb(0, 0, 0, 0.05);
+}
+
+img {
+  border-radius: 12px;
+}
+
+h1 {
+  color: var(--color-dark-navy);
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.025rem;
+  line-height: 1.35;
+  padding: 14px 0 0 0;
+}
+
+p {
+  color: var(--color-grey);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  padding: 0 16px 28px 16px;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
